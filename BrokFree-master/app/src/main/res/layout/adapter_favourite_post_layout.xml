@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:background="@color/gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--    post Image-->
+            <ImageView
+                android:id="@+id/favourite_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_launcher_background"
+                android:src="@drawable/ic_launcher_foreground">
+
+            </ImageView>
+            <!--    post Image-->
+
+            <!--    post city name-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_city_name"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="City Name"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                >
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post city name-->
+
+            <!--    post user number -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_user_number"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/favourite_post_city_name"
+                android:text="+911122334455"
+                android:textAlignment="textEnd"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="20dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post user number -->
+
+            <!--    post locality -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_locality"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favourite_post_city_name"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="locality"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post locality -->
+
+            <!--    post category -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_category"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favourite_post_user_number"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/favourite_post_locality"
+                android:text="category"
+                android:textAlignment="textEnd"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post category -->
+
+            <!--    post category type -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_category_type"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favourite_post_category"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/favourite_post_locality"
+                android:text="category_type"
+                android:textAlignment="textEnd"
+                android:textSize="18dp"
+                android:textColor="?android:attr/textColorPrimary">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post category type -->
+
+            <!--    post category sup type-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_category_sub_type"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favourite_post_category_type"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/favourite_post_locality"
+                android:text="category_sub_type"
+                android:textAlignment="textEnd"
+                android:textSize="18dp"
+                android:textColor="?android:attr/textColorPrimary">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post category sub type -->
+
+            <!--    post address -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourite_post_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/favourite_post_category_sub_type"
+                android:layout_above="@+id/favourite_post_learn_more"
+                android:text="address "
+                android:textSize="18dp"
+                android:textColor="?android:attr/textColorPrimary">
+
+            </com.google.android.material.textview.MaterialTextView>
+            <!--    post address -->
+
+            <!--    post learn more -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favourite_post_learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_button"
+                android:text="learn More">
+
+            </com.google.android.material.button.MaterialButton>
+            <!--    post learn more -->
+
+            <!--    post seller info  -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favourite_post_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/favourite_post_learn_more"
+                android:background="@drawable/round_button"
+                android:text="seller Info">
+
+            </com.google.android.material.button.MaterialButton>
+            <!--    post seller info-->
+
+            <!--    post Image-->
+            <ImageView
+                android:id="@+id/favourite_post_favourite_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_launcher_background"
+                android:src="@drawable/ic_baseline_favorite_fill_24">
+
+            </ImageView>
+            <!--    post Image-->
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

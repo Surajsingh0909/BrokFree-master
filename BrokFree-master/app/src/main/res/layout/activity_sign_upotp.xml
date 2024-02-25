@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a1b0d8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BrokFree"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="OTP Verification"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/register_otp_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer Counter"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/otp_digit_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_outline"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/otp_digit_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_outline"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/otp_digit_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_outline"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/otp_digit_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/box_outline"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/otp_digit_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_outline"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/otp_digit_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_outline"
+                android:gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_verify_otp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_button"
+            android:text="VERIFY"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_registration_progress"/>
+
+
+        <Button
+            android:id="@+id/register_resend_otp_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="RESEND OTP"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>

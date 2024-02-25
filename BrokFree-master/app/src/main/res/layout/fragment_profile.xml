@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuFragment.profile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="15dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:text="@string/Profile_title"
+           android:textStyle="bold"
+           android:textSize="30dp"
+           >
+       </TextView>
+       <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/ic_launcher_background"
+               >
+           </ImageView>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_baseline_person_24"
+               >
+           </ImageView>
+           <LinearLayout
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/detail">
+               </TextView>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/full_names"
+                   android:textStyle="bold">
+               </TextView>
+
+           </LinearLayout>
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_baseline_create_24"
+               >
+
+           </ImageView>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="5dp">
+
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/ic_baseline_phone_24"
+               >
+           </ImageView>
+           <LinearLayout
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/contact">
+               </TextView>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/contact_number"
+                   android:textStyle="bold">
+               </TextView>
+
+           </LinearLayout>
+           <!--mobile number-->
+       </LinearLayout>
+       <!--mobile number-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:text="@string/Edit_Detail"
+           android:textStyle="bold"
+           android:textSize="30dp"
+           >
+       </TextView>
+       <ListView
+           android:id="@+id/List_view_Post_edit"
+           android:layout_width="match_parent"
+           android:layout_height="575dp">
+
+       </ListView>
+
+
+   </LinearLayout>
+
+
+</ScrollView><!--last-->
+
+</FrameLayout>

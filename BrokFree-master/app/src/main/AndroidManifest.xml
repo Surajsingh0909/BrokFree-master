@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vm.brokfree">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BrokFreee">
+        <activity
+            android:name=".OtherActivities.SplashScreen"
+            android:exported="true" >
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Authentication.SignUPOtp"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginOtp"
+            android:exported="false" />
+        <activity
+            android:name=".post.CreatePostPostThree"
+            android:exported="false" />
+        <activity
+            android:name=".post.CreatePostPageTwo"
+            android:exported="true" />
+        <activity
+            android:name=".post.CreatePostPageOne"
+            android:exported="true" />
+        <activity
+            android:name=".OtherActivities.SellerInfo"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OtherActivities.LearnMore"
+            android:exported="true" />
+        <activity android:name=".Authentication.Login" />
+        <activity android:name=".Authentication.SignUp">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

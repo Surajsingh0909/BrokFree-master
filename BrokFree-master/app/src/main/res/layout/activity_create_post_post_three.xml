@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post.CreatePostPostThree">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Page 3"/>
+        <!--   Number Of Bedrooms-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select No Of Bedrooms"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+            android:inputType="number"
+            android:maxLength="2"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/no_of_bedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter No Of Bedrooms"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   Number Of Bedrooms-->
+
+        <!--   Number Of Bathrooms-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select No Of Bathrooms"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/no_of_bathrooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter No Of Bathroom"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   Number Of Bathrooms-->
+
+        <!--   Number Of Balconies-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select No Of Balconies"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/no_of_balconies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter No Of Balconies"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   Number Of Balconies-->
+
+        <!--   Area-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+app:errorEnabled="true"            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/area_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Area Sq.m"
+                android:inputType="number"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   Area-->
+
+        <!--   Other Rooms-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There Are Any Other Room"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/other_room_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Pooja Rooom "
+                android:checked="true">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Student Room ">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Servant Room "
+                >
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Store Room ">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Other ">
+
+            </com.google.android.material.chip.Chip>
+        </com.google.android.material.chip.ChipGroup>
+        <!--   Other Rooms-->
+
+        <!--   Furnished Detail-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Furnished Detail"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/furnished_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:singleSelection="true">
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Un Furnished "
+                android:checked="true">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Seme Furnished ">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Furnished "
+                >
+
+            </com.google.android.material.chip.Chip>
+
+        </com.google.android.material.chip.ChipGroup>
+        <!--   Furnished Detail -->
+
+        <!--   parking Detail-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Parking Detail"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+            android:maxLength="2"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cover_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter NO Cover Parking"
+                android:inputType="number"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusTopStart="5dp"
+            android:elevation="10dp"
+            android:maxLength="2"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/open_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter No Of Open Parking"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--   parking Detail -->
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/save_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next"
+            >
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+</ScrollView>

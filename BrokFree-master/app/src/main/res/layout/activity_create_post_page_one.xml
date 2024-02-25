@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post.CreatePostPageOne"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Create_post_page_one_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_shape"
+            app:collapseContentDescription="@string/app_name"
+            app:title="insert the data">
+
+        </androidx.appcompat.widget.Toolbar>
+         <!-- welcome sir text view-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome sir"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+         <!-- selected categargory text view-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+        <!-- the category category chip-->
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:id="@+id/create_post_category_group"
+
+            >
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Sell "
+                android:id="@+id/Category_group_sell"
+
+
+                >
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Category_group_rent"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Rent ">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Category_group_project_stucture"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Project Structure">
+
+            </com.google.android.material.chip.Chip>
+        </com.google.android.material.chip.ChipGroup>
+        <!--selected category type-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category Type"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+       <!-- type of selected category Type chip-->
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:id="@+id/create_post_category_Type_group"
+
+            >
+            <com.google.android.material.chip.Chip
+                android:id="@+id/create_post_category_commercial_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Commercial "
+                android:elevation="10dp">
+
+            </com.google.android.material.chip.Chip>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/create_post_category_Residential_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:text=" Residential ">
+
+            </com.google.android.material.chip.Chip>
+
+        </com.google.android.material.chip.ChipGroup>
+        <!--selected sub category type-->
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/create_post_frame_sub_category_type">
+    <!--residential category-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/create_post_sub_category_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Selected sub category "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+    </TextView>
+<!--    commercial-->
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:id="@+id/create_post_category_sub_type_commercial_group"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        >
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Office ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Shop ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" ShowRoom ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Land "
+            >
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" ware house "
+            >
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Other "
+            >
+
+        </com.google.android.material.chip.Chip>
+    </com.google.android.material.chip.ChipGroup>
+   <!-- residential category-->
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:visibility="gone"
+        android:id="@+id/create_post_category_sub_type_residential_group"
+        android:layout_margin="10dp">
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Aparment ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" independend House/villa ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" independend house/builder floor ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Land "
+            >
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Studio Apartment ">
+
+        </com.google.android.material.chip.Chip>
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" Farmhose ">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:text=" other ">
+
+        </com.google.android.material.chip.Chip>
+
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>
+
+</FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_page_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" NEXT "
+            android:layout_margin="10dp"
+            android:elevation="10dp">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+
+
+</ScrollView>
